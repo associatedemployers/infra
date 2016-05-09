@@ -1,3 +1,12 @@
-<h2 id="title">Welcome to Ember</h2>
+{{elements/x-navigation}}
 
-{{outlet}}
+{{#ui-sidebar class="inverted vertical menu"}}
+  {{#link-to 'index' class="item"}}
+    <i class="fa fa-fw fa-tachometer"></i>
+    Dashboard
+  {{/link-to}}
+{{/ui-sidebar}}
+
+<div class="fluid pusher container application__container">
+  {{outlet}}
+</div>
