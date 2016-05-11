@@ -1,3 +1,14 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+.ui.feed > .event > .label .fa {
+  opacity: @iconLabelOpacity;
+  font-size: @iconLabelSize;
+  width: @iconLabelWidth;
+  padding: @iconLabelPadding;
+  background: @iconLabelBackground;
+  border: @iconLabelBorder;
+  border-radius: @iconLabelBorderRadius;
+  color: @iconLabelColor;
+}

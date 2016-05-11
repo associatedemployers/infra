@@ -1,1 +1,112 @@
-{{outlet}}
+<div class="ui five statistics container dashboard__statistics">
+  <div class="orange statistic">
+    <div class="value">
+      71.22%
+    </div>
+    <div class="label">
+      Avg CPU Load
+    </div>
+  </div>
+  <div class="green statistic">
+    <div class="value">
+      53.50%
+    </div>
+    <div class="label">
+      Avg Mem Load
+    </div>
+  </div>
+
+  <div class="statistic">
+    <div class="value">
+      12
+    </div>
+    <div class="label">
+      Instances
+    </div>
+  </div>
+  <div class="statistic">
+    <div class="value">
+      3
+    </div>
+    <div class="label">
+      Infrals
+    </div>
+  </div>
+  <div class="statistic">
+    <div class="value">
+      3
+    </div>
+    <div class="label">
+      Machines
+    </div>
+  </div>
+</div>
+
+<div class="ui two column stackable grid fluid container">
+  <div class="column">
+    <div class="ui segment">
+      <h3 class="ui header"><i class="fa fa-fw fa-ellipsis-h"></i> Current Jobs</h3>
+      <div class="ui divider"></div>
+      <div class="ui segments">
+        <div class="ui segment">
+          {{#ui-progress percent=60 classNames="ui top attached orange indicating"}}
+            <div class="bar"></div>
+          {{/ui-progress}}
+          <div class="content">
+            <div><strong>Container 2/3 - Running Build Commands 3/11...</strong></div>
+            <div class="center aligned summary">
+              <a>slate-payroll</a> <code>0.17.4</code> is rolling out to 3 targets
+            </div>
+            <div class="meta">
+              <i class="fa fa-fw fa-clock-o"></i> 1min 34sec since trigger
+              <i class="fa fa-fw fa-code-fork"></i> master
+              <i class="fa fa-fw fa-bullhorn"></i> rolling strategy
+            </div>
+
+          </div>
+        </div>
+
+        <div class="ui segment">
+          {{#ui-progress percent=90 classNames="ui top attached green indicating"}}
+            <div class="bar"></div>
+          {{/ui-progress}}
+          <div class="content">
+            <div><strong>Cleaning up build trash...</strong></div>
+            <div class="center aligned summary">
+              <a>slate-payroll</a> <code>0.18.0</code> is rolling out to 1 target
+            </div>
+            <div class="meta">
+              <i class="fa fa-fw fa-clock-o"></i> 3min 2sec since trigger
+              <i class="fa fa-fw fa-code-fork"></i> canary
+              <i class="fa fa-fw fa-bullhorn"></i> shotgun strategy
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui segment">
+      <h3 class="ui header"><i class="fa fa-fw fa-tasks"></i> Latest Deployments</h3>
+      <div class="ui divider"></div>
+      <div class="ui large feed">
+        <div class="event">
+          <div class="label">
+            <i class="fa fa-fw fa-check"></i>
+          </div>
+          <div class="content">
+            <div class="summary">
+              <a>slate-payroll</a> <code>0.17.2</code> was deployed to 3 targets
+              <div class="date">
+                2 hours ago @ 4:55pm 4/1/16
+              </div>
+            </div>
+            <div class="meta">
+              <i class="fa fa-fw fa-clock-o"></i> 4min 45sec <i class="fa fa-fw fa-code-fork"></i> canary
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

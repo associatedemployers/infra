@@ -2,8 +2,16 @@
 
 {{#ui-sidebar class="inverted vertical menu"}}
   {{#link-to 'index' class="item"}}
-    <i class="fa fa-fw fa-tachometer"></i>
     Dashboard
+    <i class="fa fa-fw fa-tachometer"></i>
+  {{/link-to}}
+  {{#link-to 'deployments' class="item"}}
+    Deployments
+    <i class="fa fa-fw fa-ship"></i>
+  {{/link-to}}
+  {{#link-to 'apps' class="item"}}
+    Applications
+    <i class="fa fa-fw fa-code"></i>
   {{/link-to}}
 {{/ui-sidebar}}
 
